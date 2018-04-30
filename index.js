@@ -1,46 +1,51 @@
-import "./style/index.scss";
-import "./materialize-src/sass/materialize.scss"
 import { Component, render } from "preact";
-import Question from "./components/Question.js";
 import firebase from './firebase.js';
 import 'preact/devtools';
 import {BrowserRouter} from 'react-router-dom';
+import QuestionComponent from './src/pagedraw/QuestionComponent.jsx';
+import linkState from 'linkstate';
+import { bind } from 'decko';
 
 export default class App extends Component {
 	constructor(props) {
 		super(props);
-		this.setState({ kazanim: 22, soru: "Eve *", cevap: "gideceğim" })
+		this.setState({ })
 	}
-	render(props, { kazanim, soru, cevap }) {
+	render(props, { question, type, answer, currentanswer }) {
 		return (<div>
-			<div class="question-container">
-				<Question
-					correctAnswer={() => { this.setState({ kazanim: 10, soru: "Lütfen * cevap ver", cevap: "doğru" }) }}
-					kazanim={kazanim}
-					soru={soru}
-					cevap={cevap}
-					type="fill" />
-			</div>
-			<div class="row">
-				<form class="col s12">
-					<div class="row">
-						<div class="input-field col s12">
-							<input type="text" id="kazanim" placeholder="Kazanım" class="validate" />
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<input id="soru" type="text" placeholder="Soru" class="validate" />
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<input id="cevap" type="text" placeholder="Cevap" class="validate" />
-						</div>
-					</div>
-				</form>
-			</div>
+			<QuestionComponent question={question} onChange={linkState(this,"currentanswer")} currentanswer={currentanswer} submitanswer={this.submitAnswer} answer={answer} type={type} />
 		</div>
 		);
+	}
+	@bind
+	submitAnswer(ans) {
+		if(this.state.answer!=undefined) {
+			return;
+		}
+		if (this.state.type=="tf") {
+			if (ans==this.state.questionAnswer) {
+				this.setState({answer:this.state.questionAnswer});
+				this.correctAnswer();
+			}else {
+
+				this.setState({answer:this.state.questionAnswer});
+				this.incorrectAnswer();
+			}
+		} else if (this.state.type=="fill") {
+			if (this.state.currentanswer==this.state.questionAnswer) {
+				this.setState({answer:this.state.questionAnswer});
+				this.correctAnswer();
+			}else {
+
+				this.setState({answer:this.state.questionAnswer});
+				this.incorrectAnswer();
+			}
+		}
+	}
+	correctAnswer(){
+		
+	}
+	incorrectAnswer(){
+
 	}
 }
