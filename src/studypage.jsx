@@ -75,23 +75,11 @@ class StudyPage extends Component {
     }
     checkAns(ans) {
         if (this.state.currentQ.type=="tf") {
-			if (ans==this.state.currentQ.answer) {
-				return true
-			}else {
-				return false
-			}
+			return ans==this.state.currentQ.answer;
 		} else if (this.state.currentQ.type=="fill") {
-			if (this.state.currentText==this.state.currentQ.answer) {
-				return true
-			}else {
-				return false
-			}
+            return this.state.currentText==this.state.currentQ.answer;
         } else if (this.state.currentQ.type=="multi") {
-            if (ans==this.state.currentQ.answer) {
-                return true;
-            } else {
-                return false;
-            }
+            return ans==this.state.currentQ.answer;
         }
     }
     @bind
