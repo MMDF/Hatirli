@@ -1,9 +1,21 @@
 
+p {
+    font-size:2em;
+}
 div.answer-input {
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+    &.correct {
+        input[label="cevap"]{
+        color:rgb(120, 233, 92);
+        background-color: rgb(225, 250, 220);
+        text-decoration: underline;
+    }
+    }
     display: inline-block;
     width: auto;
     position: relative;
-    padding: 0 0.2em;
+    padding: 0;
     box-sizing: border-box;
     div {
         z-index: 10;
@@ -15,9 +27,14 @@ div.answer-input {
             animation-duration: 0.6s;
             animation-fill-mode: forwards;
         }
+     margin:0 0.3em;
+        padding:0;  
     }
     
     input[label="cevap"] {
+        
+        padding: 0 0.3em;
+        margin:0;
         position: absolute;
         width: 100%;
         top: 0;
@@ -25,10 +42,26 @@ div.answer-input {
         background-color: rgba(230, 230, 230, 1);
         border: 0;
         border-radius: 3px;
-        padding: 0 0.2em;
         box-sizing: border-box;
         height:auto;
         line-height:inherit;
         font-size:inherit;
+    }
+}
+
+
+@keyframes enterview {
+    0% {
+        opacity: 0;
+        transform: scale(1, 1);
+        transform-origin: 50% 50%;
+    }
+    25% {
+        opacity: 0.125;
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1, 1);
     }
 }

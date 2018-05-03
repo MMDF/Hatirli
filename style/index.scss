@@ -1,0 +1,97 @@
+
+.card-action button {
+    text-align: center;
+    width:50%;
+    height:100%;
+}
+.card-action{
+    padding:0 0px;
+    display: flex;
+    flex-direction: row;
+}
+.card-panel{
+    font-size:2em;
+    transition:all 0.6s ease-in-out;
+    border:initial;
+}
+.card-panel.correct {
+    border: 3px solid #76ff03;
+}
+.card-panel.wrong {
+    border: 2px solid #f44336;
+}
+.question-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+* {
+    margin: 0;
+}
+div.answer-input {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    padding: 0 0.2em;
+    box-sizing: border-box;
+    div {
+        z-index: 10;
+        opacity: 0;
+        pointer-events: none;
+        box-sizing:border-box;
+        &.revealed {
+            animation-name: enterview;
+            animation-duration: 0.6s;
+            animation-fill-mode: forwards;
+        }
+    }
+    
+    input[label="cevap"] {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(230, 230, 230, 1);
+        border: 0;
+        border-radius: 3px;
+        padding: 0 0.2em;
+        box-sizing: border-box;
+        height:auto;
+        line-height:inherit;
+        font-size:inherit;
+    }
+}
+  .animate {
+    animation-name: rotate;
+    animation-duration:0.4s;
+    animation-timing-function:ease-in-out;
+    animation-direction:alternate;
+    animation-iteration-count:2;
+  }
+  @keyframes rotate {
+    0%{
+      transform:rotateX(0deg);
+    }
+    
+    100%{
+      transform:rotateX(360deg);
+    }
+  }
+@keyframes enterview {
+    0% {
+        opacity: 0;
+        transform: scale(1, 1);
+        transform-origin: 50% 50%;
+    }
+    25% {
+        opacity: 0.125;
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1, 1);
+    }
+}

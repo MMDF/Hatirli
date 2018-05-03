@@ -6,10 +6,11 @@
     flex-grow: 1;
 }
 
-.multistate_group-fill-7 {
+.multistate_group-multi-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: #FFFFFF;
     flex-grow: 1;
 }
 
@@ -23,29 +24,96 @@
     flex-basis: 0px;
 }
 
-.multistate_group-rectangle-1 {
+.multistate_group-rectangle-0 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0px;
     min-height: fit-content;
     padding-top: 21px;
-    padding-bottom: 20px;
-    border-radius: 9px;
+    padding-bottom: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px 0px rgb(217, 217, 217);
     background: rgba(255,255,255,1);
 }
 
 .multistate_group-0-0-0-1-0 {
     display: flex;
+}
+
+.multistate_group-0-0-0-1-0-0 {
+    height: 0px;
+    flex-grow: 0.03498542274052478;
+    flex-basis: 0px;
+}
+
+.multistate_group-lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_aenean_lacinia_mauris_ac_orci_ultrices_efficitur_aliquam_ipsum_neque_convallis_et_venenatis_aliquet_tempus_eget-6 {
+    flex-grow: 0.9314868804664723;
+    flex-basis: 0px;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0,0,0,1);
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: LEFT;
+    word-wrap: break-word;
+}
+
+.multistate_group-0-0-0-1-0-2 {
+    height: 0px;
+    flex-grow: 0.033527696793002916;
+    flex-basis: 0px;
+}
+
+.multistate_group-0-0-0-1-1 {
+    display: flex;
+    margin-top: 11px;
     padding-left: 24px;
     padding-right: 23px;
 }
 
-.multistate_group-lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_aenean_lacinia_mauris_ac_orci_ultrices_efficitur_aliquam_ipsum_neque_convallis_et_venenatis_aliquet_tempus_eget-5 {
-    flex-grow: 1;
+.multistate_group-multibutton-8 {
+    flex-grow: 0.5;
     flex-basis: 0px;
     display: flex;
     flex-direction: column;
+    min-height: 114px;
+}
+
+.multistate_group-multibutton-3 {
+    flex-grow: 0.5;
+    flex-basis: 0px;
+    margin-left: 27px;
+    display: flex;
+    flex-direction: column;
+    min-height: 114px;
+}
+
+.multistate_group-0-0-0-1-2 {
+    display: flex;
+    margin-top: 23px;
+    padding-left: 24px;
+    padding-right: 23px;
+}
+
+.multistate_group-multibutton-6 {
+    flex-grow: 0.5;
+    flex-basis: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 114px;
+}
+
+.multistate_group-multibutton-38 {
+    flex-grow: 0.5;
+    flex-basis: 0px;
+    margin-left: 27px;
+    display: flex;
+    flex-direction: column;
+    min-height: 114px;
 }
 
 .multistate_group-0-0-0-2 {
@@ -54,7 +122,7 @@
     flex-basis: 0px;
 }
 
-.multistate_group-tf-7 {
+.multistate_group-fill-7 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +139,56 @@
     flex-basis: 0px;
 }
 
-.multistate_group-rectangle-0 {
+.multistate_group-rectangle-1 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0px;
+    min-height: fit-content;
+    padding-top: 21px;
+    padding-bottom: 187px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px 0px rgb(217, 217, 217);
+    background: rgba(255,255,255,1);
+}
+
+.multistate_group-1-0-0-1-0 {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 22px;
+}
+
+.multistate_group-lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_aenean_lacinia_mauris_ac_orci_ultrices_efficitur_aliquam_ipsum_neque_convallis_et_venenatis_aliquet_tempus_eget-5 {
+    flex-grow: 1;
+    flex-basis: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.multistate_group-1-0-0-2 {
+    height: 0px;
+    flex-grow: 0;
+    flex-basis: 0px;
+}
+
+.multistate_group-tf-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.multistate_group-2-0-0 {
+    display: flex;
+}
+
+.multistate_group-2-0-0-0 {
+    height: 0px;
+    flex-grow: 0;
+    flex-basis: 0px;
+}
+
+.multistate_group-rectangle-00 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -79,11 +196,12 @@
     min-height: fit-content;
     padding-top: 21px;
     padding-bottom: 28px;
-    border-radius: 9px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px 0px rgb(217, 217, 217);
     background: rgba(255,255,255,1);
 }
 
-.multistate_group-1-0-0-1-0 {
+.multistate_group-2-0-0-1-0 {
     display: flex;
     padding-left: 24px;
     padding-right: 23px;
@@ -104,7 +222,7 @@
     word-wrap: break-word;
 }
 
-.multistate_group-1-0-0-1-1 {
+.multistate_group-2-0-0-1-1 {
     display: flex;
     margin-top: 12px;
     padding-left: 24px;
@@ -126,7 +244,7 @@
     flex-direction: column;
 }
 
-.multistate_group-1-0-0-2 {
+.multistate_group-2-0-0-2 {
     height: 0px;
     flex-grow: 0;
     flex-basis: 0px;
